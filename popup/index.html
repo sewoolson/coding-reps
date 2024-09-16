@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Test</title>
+    <link rel="stylesheet" href="styles.css">  
+</head>
+<body>
+    <div class="container">
+        <p>Original tutorial by <a href="https://youtu.be/AF6vGYIyV8M?si=5yQI3e5LMx1CGpLS">GreatStack.</a></p>
+            <p class="my-additions">Personal additions made were:</p>
+            <ul> 
+                <li><p>Added a paragraph citing source and made this list</p></li>
+                <li><p>Color changes to the background as well as button hover states</p></li>
+                <li><p>Cursor type for buttons on hover</p></li>
+                <li><p>Moved javascript out of html and into index.js. Originally the creator had inline javascript on html, but personally I like to separate these.</p></li>
+                <li><p>Sprinkled some of my personality into it</p></li>
+            </ul>
+        <button type="submit" class="btn" onclick="openPopup()">Let's see this popup</button>
+        <div class="popup" id="popup">
+            <img src="/assets/404-tick.png" alt="">
+            <h2>Thank you</h2>
+            <p class="thanks">I appreciate your time.</p>
+            <button type="button" onclick="closePopup()">K, bye!</button>
+
+        </div><!-- end of pop up div-->
+    </div><!-- end of container-->
+<script src="index.js"></script>
+
+</body>
+</html>
